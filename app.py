@@ -84,6 +84,8 @@ def work():
             w.end_date = 'CUR'
     return render_template('work.html', works=works)
 
+
+
 # # ... Add routes for contact form, etc., if needed
 # @app.route('/contact', methods=['GET', 'POST'])
 # def contact():
@@ -99,4 +101,3 @@ def work():
 #         return render_template('about.html', msg_sent=True)
 #     else:
 #         return render_template('about.html', msg_sent=False)
-

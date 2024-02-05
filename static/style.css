@@ -112,11 +112,3 @@ a{
 .text-content {
   max-width: 70%; /* Adjust the width as needed */
 }
-
-.profile-photo {
-  position: absolute;
-  top: 0;
-  right: 388px;
-  max-width: 15%; /* Adjust the width as needed */
-  border-radius: 8px; /* Optional: Add rounded corners to the photo */
-}
