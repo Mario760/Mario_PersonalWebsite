@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+  <header>
+    <h1>Jiawei Ma</h1>
+    <nav>
+      <ul class="rocketul">
+        <li class="rocketli"><a href="/">Home</a></li>
+        <li class="rocketli"><a href="/education">Educations</a></li>
+        <li class="rocketli"><a href="/work">Work Experience</a></li>
+        <li class="rocketli"><a href="/projects">Projects</a></li>
+        <li class="rocketli"><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %} 
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Jiawei Ma</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>My Working Experience</h1>
+  <table>
+  <tr>
+    <th style="width:10%">Company</th>
+    <th style="width:20%">Title</th>
+    <th style="width:50%">Description</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  {% for work in works %}
+  <tr>
+    <td>{{ work.company }}</td>
+    <td>{{ work.title }}</td>
+    <td class="description">
+      <ul>
+        {% for sentence in work.description.split('. ') %}
+            <li>{{ sentence }}</li>
+        {% endfor %}
+      </ul>
+    </td>
+    <td>{{ work.start_date }}</td>
+    <td>{{ work.end_date }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

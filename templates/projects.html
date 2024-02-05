@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>My Projects</h1>
+  <table>
+  <tr>
+    <th style="width:10%">Name<br>(Click & Redirect to GitHub Repo)</th>
+    <th style="width:60%">Description</th>
+    <th style="width:20%">Skills</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  {% for project in projects %}
+  <tr>
+    <td><a href="{{ project.URL }}" >{{ project.name }}</a></td>
+    <td class="description">
+      <ul>
+        {% for sentence in project.description.split('. ') %}
+            <li>{{ sentence }}</li>
+        {% endfor %}
+      </ul>
+    </td>
+    <td>{{ project.skills }}</td>
+    <td>{{ project.start_date }}</td>
+    <td>{{ project.end_date }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

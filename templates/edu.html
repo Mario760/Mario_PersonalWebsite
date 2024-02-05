@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>My Education</h1>
+  <table>
+    <tr>
+      <th>School</th>
+      <th>Degree</th>
+      <th>Major</th>
+      <th>CGPA</th>
+      <th>Achievements</th>
+      <th>Relevant Courses</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+    </tr>
+    {% for education_entry in education_entries %}
+    <tr>
+      <td>{{ education_entry.school }}</td>
+      <td>{{ education_entry.degree }}</td>
+      <td>{{ education_entry.major }}</td>
+      <td>{{ education_entry.CGPA }}</td>
+      <td>
+        <ul class="rocketul">{% for sentence in education_entry.Achievements.split('. ') %}
+            <li class="rocketli" style="text-align: left;">{{ sentence }}</li>
+        {% endfor %}
+        </ul>
+      </td>
+      <td><ul class="rocketul">{% for sentence in education_entry.RelevantCourses.split('. ') %}
+            <li class="rocketli" style="text-align: left;">{{ sentence }}</li>
+        {% endfor %}
+        </ul>
+      </td>
+      <td>{{ education_entry.start_date }}</td>
+      <td>{{ education_entry.end_date }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

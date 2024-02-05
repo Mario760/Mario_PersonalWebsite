@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+    background-color: #181818; /* Dark background */
+    color: #eee; /* Light text color */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    color: #00cc99; /* Bright accent color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: #c0c0c0; /* Gray link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00cc99; /* Accent color on hover */
+}
+
+/* Project Styling */
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    border-bottom: 1px solid #444;
+    padding: 15px 0;
+}
+
+/* Skills Styling (Adjust as needed) */
+.skills ul {
+    list-style-type: disc; /* Use bullet points */
+    margin-left: 30px;
+}
+
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    td.description {
+      text-align: left;
+    }
+
+/* Footer Styling */
+footer {
+    position: bottom-left;
+    bottom: 0;
+    text-align: left;
+    margin-top: 40px;
+    color: #888;
+}
+
+/* Optional: Code Styling */
+pre {
+    background-color: #303030;
+    color: #eee;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: underline;
+}
+
+.rocketul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.rocketli {
+  background: url('./rocket.png') no-repeat 0 50%;
+  padding-left: 20px;
+  background-size: 16px; /* Adjust the size as needed */
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+.text-content {
+  max-width: 70%; /* Adjust the width as needed */
+}
+
+.profile-photo {
+  position: absolute;
+  top: 0;
+  right: 388px;
+  max-width: 15%; /* Adjust the width as needed */
+  border-radius: 8px; /* Optional: Add rounded corners to the photo */
+}

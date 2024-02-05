@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="content-wrapper">
+  <div class="text-content">
+  <h1>About Me</h1>
+  <ul class="rocketul">
+    <li class="rocketli">Recently graduated with a Master's Degree in Computer Engineering from the University of Toronto.</li>
+    <li class="rocketli">Lead development projects utilizing Java, Python, JavaScript, and AWS cloud services. </li>
+    <li class="rocketli">Passionate about software engineering, focusing on designing scalable and reliable backend solutions. </li>
+    <li class="rocketli">Willing to find a full-time job as a software engineer or in a similar role.</li>
+  </ul>
+
+  <h2>Skills</h2>
+  <table style="width:80%">
+  {% for type, skills_group in skills|groupby('type') %}
+  <tr>
+    <td><b>{{ type }}</b></td>
+    <td>
+      {% for skill in skills_group %}
+        {{ skill.name }}{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </td>
+  </tr>
+  {% endfor %}
+  </table>
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+    <ul class="rocketul">
+    <li class="rocketli"><a href="https://www.linkedin.com/in/jiawei-ma-19841715b/">LinkedIn</a></li>
+    <li class="rocketli"><a href="mailto:jiaweima760@gmail.com">Gmail</a></li>
+    <li class="rocketli"><a href="tel:6139813791">TEL: +1(613)-981-3791</a></li>
+    </ul>
+<!--  <form method="POST" action="/contact">-->
+<!--    <div>-->
+<!--      <label for="name">Name:</label>-->
+<!--      <input type="text" id="name" name="name" required>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <label for="email">Email:</label>-->
+<!--      <input type="email" id="email" name="email" required>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <label for="message">Message:</label>-->
+<!--      <textarea id="message" name="message" required></textarea>-->
+<!--    </div>-->
+<!--    <button type="submit">Send Message</button>-->
+<!--  </form>-->
+  </section>
+  <img src="../static/1688603227577.jpeg" alt="Jiawei Ma's Photo" class="profile-photo">
+    </div>
+  </div>
+{% endblock %}
