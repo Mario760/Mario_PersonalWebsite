@@ -1,7 +1,7 @@
 import collections
 import os
-from flask import Flask, render_template, request
-from flask_mail import Mail, Message
+from flask import Flask, render_template
+# from flask_mail import Mail, Message
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import inspect, text
@@ -14,7 +14,7 @@ app.config.from_object(Config)  # Load configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///resume_info.db'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-mail = Mail(app)
+# mail = Mail(app)
 
 
 def initialize_database():
