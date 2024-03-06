@@ -51,28 +51,91 @@ INSERT INTO "skills" VALUES (8,'C++','Language');
 INSERT INTO "skills" VALUES (9,'Spring Boot','Framework');
 INSERT INTO "skills" VALUES (10,'Flask','Framework');
 INSERT INTO "skills" VALUES (11,'Data Structures','Concept');
-INSERT INTO "skills" VALUES (12,'Algorithms','Concept');
+INSERT INTO "skills" VALUES (12,'Thread','Concept');
 INSERT INTO "skills" VALUES (13,'OOP Design','Concept');
-INSERT INTO "skills" VALUES (14,'Networking Protocals','Concept');
-INSERT INTO "skills" VALUES (15,'Cloud Architecture','Concept');
-INSERT INTO "skills" VALUES (16,'Parallel Programming','Concept');
-INSERT INTO "skills" VALUES (17,'Cloud Architecture','Concept');
-INSERT INTO "skills" VALUES (18,'Git','Tools');
-INSERT INTO "skills" VALUES (19,'JUnit','Tools');
-INSERT INTO "skills" VALUES (20,'Pytorch','Tools');
-INSERT INTO "skills" VALUES (21,'CI/CD pipelines','Tools');
-INSERT INTO "skills" VALUES (22,'Jira','Tools');
-INSERT INTO "skills" VALUES (23,'Trello Board','Tools');
-INSERT INTO "skills" VALUES (24,'Slack','Tools');
-INSERT INTO "skills" VALUES (25,'VS code','Tools');
-INSERT INTO "skills" VALUES (26,'Eclipse','Tools');
-INSERT INTO "skills" VALUES (27,'Firebase','Tools');
-INSERT INTO "skills" VALUES (28,'AWS','Cloud');
-INSERT INTO "skills" VALUES (29,'Azure','Cloud');
-INSERT INTO "skills" VALUES (30,'Vercel','Cloud');
-INSERT INTO "skills" VALUES (31,'Heroku','Cloud');
-INSERT INTO "projects" VALUES (1,'AWS Image Host','Designed and built full-stack image hosting web app in Python/Flask, allowing users to upload, store and retrieve images efficiently. Optimized performance by implementing Memcached to reduce database reads by up to 50%. Demonstrated Agile methodology development skills to quickly build feature rich web applications within 3 months. Scaled web application on AWS by leveraging services like EC2, S3, RDS and Lambda to improve resilience and efficiency and achieve seamless storage, computing, and networking. Transformed core functions to AWS Lambda serverless architecture, ensuring scalability and cost efficiency. Utilized AWS Rekognition for image labelling, enabling automatic tagging to improved user experience.','Python, Flask, AWS','2022-09-01','2022-12-31','https://github.com/ECE1779BestGroup/ECE1779-Project3.git');
-INSERT INTO "projects" VALUES (2,'Security Evaluations Management Platform','Designed UML and ER diagrams to model system architecture and plan database structure, demonstrating analytical skills to boost agile methodology development efficiency. Developed and integrated PostgreSQL database with Flask back-end to enable secure user authentication and data management, leveraging SQL and Python. Implemented Flask web application with Python, integrating Flask extensions like Flask-Login and Flask-Migrate to build feature-rich and scalable software. Deployed full-stack web application on Heroku server for online access, exhibiting ability to develop and deploy cloud-based solutions. Created CI/CD pipeline with CircleCI for automatic testing and delivery of product versions, underscoring understanding of agile, DevOps methodologies.','Python, Flask, PostgreSQL, CI/CD pipelines, Heroku','2021-09-01','2022-04-30','https://github.com/Security-Evaluations-Management/ManageYourSecurityEvaluations.git');
-INSERT INTO "projects" VALUES (3,'Mini-Monkey Survey','Designed UML diagrams and ER database schema to model robust system architecture enabling agile methodology development of a Java SpringBoot web application. Developed full-stack functionalities implementing MVC structure and CRUD operations for survey creation, storage and automated multi-format visualization. Created user-friendly interface with a dynamic display of survey results in charts/graphs using Chart.js for superior survey taker experience. Leveraged CircleCI to deploy automated CI/CD pipeline tests and one-click Heroku deployment showcasing DevOps abilities. Collaborated as part of an agile team to architect, design, develop and deploy a production-ready web application in less than 3 months. Achieved over 90% client satisfaction score in user testing for intuitive interface and impactful visual report functionalities.','Java, SpringBoot, CI/CD pipelines, Heroku','2022-01-01','2022-04-30','https://github.com/SYSC-4806-Proj/Mini-SurveyMonkey.git');
-INSERT INTO "projects" VALUES (4,'Elevator Simulation','Designed and developed a multi-threaded elevator simulation system in Java to model a 22-floor tower with 3 elevators using test-driven development. Implemented core back-end logic for floor, elevator, and scheduler subsystems to communicate via TCP/IP networking protocols. Created UML diagrams to model system architecture during agile methodology development iterations within team of 4. Engineered algorithms to efficiently assign nearest elevators and optimize transport times. Incorporated load balancing and fault tolerance capabilities to maximize reliability. Used continuous testing and refinement of edge cases to improve functionality. Demonstrated effective collaboration skills virtually during pandemic conditions. Leveraged knowledge of networks, algorithms and design patterns for robust solution. Maximized scalability and maintainability through test-driven development techniques.','Java, Networking, Threads','2021-01-01','2021-04-30','https://github.com/peymantajadod/SYSC3303_Project.git');
+INSERT INTO "skills" VALUES (14,'Networking Protocals (UDP, TCP/IP)','Concept');
+INSERT INTO "skills" VALUES (15,'Software Architecture','Concept');
+INSERT INTO "skills" VALUES (16,'Cloud Architecture','Concept');
+INSERT INTO "skills" VALUES (17,'Git','Tools');
+INSERT INTO "skills" VALUES (18,'JUnit','Tools');
+INSERT INTO "skills" VALUES (19,'Pytorch','Tools');
+INSERT INTO "skills" VALUES (20,'CI/CD pipelines','Tools');
+INSERT INTO "skills" VALUES (21,'Jira','Tools');
+INSERT INTO "skills" VALUES (22,'Trello Board','Tools');
+INSERT INTO "skills" VALUES (23,'Slack','Tools');
+INSERT INTO "skills" VALUES (24,'VS code','Tools');
+INSERT INTO "skills" VALUES (25,'Eclipse','Tools');
+INSERT INTO "skills" VALUES (26,'Firebase','Tools');
+INSERT INTO "skills" VALUES (27,'AWS','Cloud');
+INSERT INTO "skills" VALUES (28,'Azure','Cloud');
+INSERT INTO "skills" VALUES (29,'Vercel','Cloud');
+INSERT INTO "skills" VALUES (30,'Heroku','Cloud');
+INSERT INTO "skills" VALUES (31,'PostgreSQL','Databases');
+INSERT INTO "skills" VALUES (32,'MySQL','Databases');
+INSERT INTO "skills" VALUES (33,'ORM','Databases');
+-- AWS Image Host
+INSERT INTO "projects" VALUES (
+    1,
+    'AWS Image Host',
+    'Designed and built full-stack image hosting web app in Python/Flask, allowing users to upload, store, and retrieve images efficiently. Optimized performance by implementing Memcached to reduce database reads by up to 50%. Demonstrated Agile methodology development skills to quickly build feature-rich web applications within 3 months. Scaled web application on AWS by leveraging services like EC2, S3, RDS, and Lambda to improve resilience and efficiency and achieve seamless storage, computing, and networking. Transformed core functions to AWS Lambda serverless architecture, ensuring scalability and cost efficiency. Utilized AWS Rekognition for image labeling, enabling automatic tagging to improve user experience.',
+    'Python, Flask, AWS',
+    '2022-09-01',
+    '2022-12-31',
+    'https://github.com/ECE1779BestGroup/ECE1779-Project3.git'
+);
+
+-- Security Evaluations Management Platform
+INSERT INTO "projects" VALUES (
+    2,
+    'Security Evaluations Management Platform',
+    'Designed UML and ER diagrams to model system architecture and plan database structure, demonstrating analytical skills to boost agile methodology development efficiency. Developed and integrated PostgreSQL database with Flask back-end to enable secure user authentication and data management, leveraging SQL and Python. Implemented Flask web application with Python, integrating Flask extensions like Flask-Login and Flask-Migrate to build feature-rich and scalable software. Deployed full-stack web application on Heroku server for online access, exhibiting the ability to develop and deploy cloud-based solutions. Created CI/CD pipeline with CircleCI for automatic testing and delivery of product versions, underscoring understanding of agile, DevOps methodologies.',
+    'Python, Flask, PostgreSQL, CI/CD pipelines, Heroku',
+    '2021-09-01',
+    '2022-04-30',
+    'https://github.com/Security-Evaluations-Management/ManageYourSecurityEvaluations.git'
+);
+
+-- Mini-Monkey Survey
+INSERT INTO "projects" VALUES (
+    3,
+    'Mini-Monkey Survey',
+    'Designed UML diagrams and ER database schema to model robust system architecture enabling agile methodology development of a Java SpringBoot web application. Developed full-stack functionalities implementing MVC structure and CRUD operations for survey creation, storage, and automated multi-format visualization. Created a user-friendly interface with a dynamic display of survey results in charts/graphs using Chart.js for superior survey taker experience. Leveraged CircleCI to deploy automated CI/CD pipeline tests and one-click Heroku deployment showcasing DevOps abilities. Collaborated as part of an agile team to architect, design, develop, and deploy a production-ready web application in less than 3 months. Achieved over 90% client satisfaction score in user testing for an intuitive interface and impactful visual report functionalities.',
+    'Java, SpringBoot, CI/CD pipelines, Heroku',
+    '2022-01-01',
+    '2022-04-30',
+    'https://github.com/SYSC-4806-Proj/Mini-SurveyMonkey.git'
+);
+
+-- Manufacturing Facility Simulation
+INSERT INTO "projects" VALUES (
+    4,
+    'Manufacturing Facility Simulation',
+    'Led the development of a discrete simulation app in Python to optimize plant operational efficiency. Implemented an innovative strategy, significantly enhancing the factory''s production efficiency. Utilized statistical techniques, including Cumulative Distribution Functions (CDF), for realistic input model validation. Conducted continuous simulations to analyze steady-state properties, ensuring robust results. Generated detailed simulation system reports, aiding in the selection of efficient operational policies.',
+    'Python, Simulation, CDF',
+    '2022-01-01',
+    '2022-04-30',
+    'https://github.com/Manufacturing-Facility/Manufacturing-Facility.git'
+);
+
+-- Bookstore Application
+INSERT INTO "projects" VALUES (
+    5,
+    'Bookstore Application',
+    'Conceptualized and executed a Java-based bookstore application with user-centric functionalities. Designed and implemented a robust database system for necessary data for the bookstore. Ensured smooth interaction with the backend logic using Java and JDBC technologies proficiently. Emphasized user experience by developing efficient search, order placement, and tracking features. Contributed to the development of a scalable and maintainable software solution.',
+    'Java, JDBC, Database',
+    '2021-09-01',
+    '2021-12-31',
+    'https://github.com/Mario760/COMP3005FinalProject.git'
+);
+
+-- Elevator Simulation System
+INSERT INTO "projects" VALUES (
+    6,
+    'Elevator Simulation System',
+    'Designed and developed a concurrent multi-threaded elevator simulation system in Java using test-driven development. Engineered algorithms for efficient elevator assignment and optimization of transport times. Implemented communication between subsystems through UDP, enabling seamless operation in diverse environments. Incorporated load balancing and fault tolerance for maximized reliability. Demonstrated effective virtual collaboration during pandemic conditions. Emphasized knowledge of networks, algorithms, and design patterns for robust solutions.',
+    'Java, Networking, Threads',
+    '2021-01-01',
+    '2021-04-30',
+    'https://github.com/peymantajadod/SYSC3303_Project.git'
+);
 COMMIT;
