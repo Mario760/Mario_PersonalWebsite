@@ -8,7 +8,7 @@ from sqlalchemy import inspect, text
 from config import Config  # Assuming you have a config.py
 from model import Project, Skill, WorkExperience, Education
 
-app = Flask(__name__)
+app = Flask(__name__, instance_path='/tmp')
 app.config.from_object(Config)  # Load configuration
 # adding configuration for using a sqlite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///resume_info.db'
@@ -83,8 +83,6 @@ def work():
         else:
             w.end_date = 'CUR'
     return render_template('work.html', works=works)
-
-
 
 # # ... Add routes for contact form, etc., if needed
 # @app.route('/contact', methods=['GET', 'POST'])
